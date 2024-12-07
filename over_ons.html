@@ -1,0 +1,207 @@
+<html lang="nl">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Over Ons
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+   .fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .slide-in {
+            animation: slideIn 1s ease-in-out;
+        }
+        @keyframes slideIn {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
+        }
+  </style>
+ </head>
+ <body class="font-roboto bg-gray-100">
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+         <div class="text-2xl font-bold text-blue-600">
+          Polispakker
+         </div>
+         <nav class="relative">
+             <ul class="flex space-x-4">
+               <li>
+                 <a class="text-gray-700 hover:text-blue-600" href="#">
+                   Home
+                 </a>
+               </li>
+               <li>
+                 <a class="text-gray-700 hover:text-blue-600" href="#">
+                   Over Ons
+                 </a>
+               </li>
+               <!-- Dropdown menu -->
+               <li class="relative group">
+                <a class="text-gray-700 hover:text-blue-600 cursor-pointer" href="diensten.html">
+                  Diensten
+                </a>
+                <ul class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
+                  <li>
+                    <a class="block px-4 py-2 text-gray-700 hover:bg-gray-100" href="autoverzekering.html">
+                      <i class="fa-solid fa-car"></i>
+                      Autoverzekering
+                    </a>
+                  </li>
+                  <li>
+                    <a class="block px-4 py-2 text-gray-700 hover:bg-gray-100" href="woonhuisverzekering.html">
+                      <i class="fa-solid fa-house"></i>
+                      Woonhuisverzekering
+                    </a>
+                  </li>
+                  <li>
+                    <a class="block px-4 py-2 text-gray-700 hover:bg-gray-100" href="zorgverzekering.html">
+                      <i class="fa-solid fa-hospital"></i>
+                      Zorgverzekering
+                    </a>
+                  </li>
+                  <li>
+                    <a class="block px-4 py-2 text-gray-700 hover:bg-gray-100" href="reisverzekering.html">
+                      <i class="fa-solid fa-plane"></i>
+                      Reisverzekering
+                    </a>
+                  </li>
+                  <li>
+                    <a class="block px-4 py-2 text-gray-700 hover:bg-gray-100" href="levensverzekering.html">
+                      <i class="fa-solid fa-heart"></i>
+                      Levensverzekering
+                    </a>
+                  </li>
+                  <li>
+                    <a class="block px-4 py-2 text-gray-700 hover:bg-gray-100" href="huisdierverzekering.html">
+                      <i class="fa-solid fa-dog"></i>
+                      Huisdierenverzekering
+                    </a>
+                  </li>
+                </ul>
+              </li>
+               
+               <li>
+                 <a class="text-gray-700 hover:text-blue-600" href="#">
+                   Contact
+                 </a>
+                 <div class="hidden hover:block bg-red-500 text-white p-4">Test</div>
+               </li>
+             </ul>
+           </nav>
+        </div>
+       </header>
+  <main class="container mx-auto p-4">
+   <section class="text-center my-8">
+    <h2 class="text-4xl font-bold fade-in">
+     Welkom bij Ons Bedrijf
+    </h2>
+    <p class="text-lg mt-4 fade-in">
+     Wij zijn toegewijd aan het leveren van de beste diensten aan onze klanten.
+    </p>
+   </section>
+   <section class="my-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+     <div class="slide-in">
+      <img alt="Een team van mensen die samenwerken aan een project" class="w-full h-auto rounded-lg shadow-lg" height="400" src="https://storage.googleapis.com/a1aa/image/QdrS4BHnfM2cKC2MracQITYszzCTACNKKMHZNX4sRT3EgP8JA.jpg" width="600"/>
+     </div>
+     <div class="flex flex-col justify-center slide-in">
+      <h3 class="text-2xl font-bold">
+       Ons Verhaal
+      </h3>
+      <p class="mt-4">
+       Ons bedrijf werd opgericht in 2020 met als doel het leveren van hoogwaardige diensten aan onze klanten. Ons team bestaat uit ervaren professionals die gepassioneerd zijn over wat ze doen.
+      </p>
+     </div>
+    </div>
+   </section>
+   <section class="my-8">
+    <h3 class="text-2xl font-bold text-center">
+     Ons Team
+    </h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+     <div class="text-center slide-in">
+      <img alt="Portret van teamlid 1" class="w-32 h-32 mx-auto rounded-full shadow-lg" height="200" src="https://storage.googleapis.com/a1aa/image/9tymff2kV4tMgE8GUasCAAISRr6iGGfxDZwrteqbefz0BwHeJA.jpg" width="200"/>
+      <h4 class="text-xl font-bold mt-4">
+       Jan Jansen
+      </h4>
+      <p class="text-gray-600">
+       CEO
+      </p>
+     </div>
+     <div class="text-center slide-in">
+      <img alt="Portret van teamlid 2" class="w-32 h-32 mx-auto rounded-full shadow-lg" height="200" src="https://storage.googleapis.com/a1aa/image/R2VtK6sw8arBOR5WxXf8bEToaaUHPcAwQL46438VD1bEgP8JA.jpg" width="200"/>
+      <h4 class="text-xl font-bold mt-4">
+       Piet Pietersen
+      </h4>
+      <p class="text-gray-600">
+       CTO
+      </p>
+     </div>
+     <div class="text-center slide-in">
+      <img alt="Portret van teamlid 3" class="w-32 h-32 mx-auto rounded-full shadow-lg" height="200" src="https://storage.googleapis.com/a1aa/image/3Us6GEzoPnZeDKoYihIonma0WN0GKgR5teRCPMqZ5srLAfwnA.jpg" width="200"/>
+      <h4 class="text-xl font-bold mt-4">
+       Klaas Klaassen
+      </h4>
+      <p class="text-gray-600">
+       COO
+      </p>
+     </div>
+    </div>
+   </section>
+   <section class="my-8">
+    <h3 class="text-2xl font-bold text-center">
+     Onze Waarden
+    </h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+     <div class="text-center slide-in">
+      <i class="fas fa-heart text-4xl text-red-500">
+      </i>
+      <h4 class="text-xl font-bold mt-4">
+       Passie
+      </h4>
+      <p class="text-gray-600">
+       Wij zijn gepassioneerd over wat we doen en streven ernaar om de beste resultaten te leveren.
+      </p>
+     </div>
+     <div class="text-center slide-in">
+      <i class="fas fa-lightbulb text-4xl text-yellow-500">
+      </i>
+      <h4 class="text-xl font-bold mt-4">
+       Innovatie
+      </h4>
+      <p class="text-gray-600">
+       Wij omarmen innovatie en zoeken voortdurend naar nieuwe manieren om onze diensten te verbeteren.
+      </p>
+     </div>
+     <div class="text-center slide-in">
+      <i class="fas fa-users text-4xl text-blue-500">
+      </i>
+      <h4 class="text-xl font-bold mt-4">
+       Samenwerking
+      </h4>
+      <p class="text-gray-600">
+       Wij geloven in de kracht van samenwerking en werken nauw samen met onze klanten en partners.
+      </p>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="bg-blue-600 text-white p-4 mt-8">
+   <div class="container mx-auto text-center">
+    <p>
+     © 2023 Ons Bedrijf. Alle rechten voorbehouden.
+    </p>
+   </div>
+  </footer>
+ </body>
+</html>
